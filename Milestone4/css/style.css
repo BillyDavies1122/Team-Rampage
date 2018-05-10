@@ -1,7 +1,7 @@
 body{
-  background-color: #4ABDAC;
   font-family: Arial;
   margin:0;
+  position: relative;
 }
 
 /* Controls all of the navigation css */
@@ -24,9 +24,11 @@ body{
   text-align: center;
   background-color: #FC4A1A;
 }
+
 button {
+  flex:1;
   height:50px;
-  width:80px;
+  max-width:160px;
   font-size: 17px;
   border-style:none;
   background-color: #FC4A1A;
@@ -53,6 +55,10 @@ button:hover{
 }
 /* End of navigation css */
 
+.main{
+  background-color: #4ABDAC;
+}
+
 /* Controls image css */
 .image{
   position: relative;
@@ -75,29 +81,34 @@ button:hover{
 /* end of image css */
 
 /* Controls main content of page css*/
+
 .mainContent{
-text-align: left;
-height:90%;
-padding-bottom: 15px;
-z-index: 2;
+  text-align: left;
+  height:100%;
 }
 .mainContent h1{
+  text-align: center;
+}
+.mainContent p:last-child{
+  margin:0 0 0 0;
 }
 
 /* End of main css*/
 
 /* Controls footer css*/
 .footer{
-  width:100%;
+  position: sticky;
+  bottom: 0;
+  width: 100%;
+  padding: 4px;
   background-color: #fc4a1a;
-  position: static;
-  z-index: -1;
+  text-align: center;
   font-size: 13px;
+  opacity: 0.8;
 }
 .footer h2{
   margin:0 0 3px 0;
 }
-
 .footer p{
   margin:0 0 3px 0;
 }
