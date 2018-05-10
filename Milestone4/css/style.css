@@ -1,16 +1,20 @@
+body{
+  background-color: #4ABDAC;
+  font-family: Arial;
+  margin:0;
+}
+
+/* Controls all of the navigation css */
 .nav{
   display:flex;
   width:100%;
-  margin-bottom: 20px;
   position: relative;
-}
-.nav div{
-background-color: white;
+  z-index: 1;
+  height:50px;
 }
 
 .Content{
   display: none;
-  background-color:#eeeeee;
   width:80px;
 }
 .nav a{
@@ -18,14 +22,14 @@ background-color: white;
   color: black;
   font-size: 14px;
   text-align: center;
+  background-color: #FC4A1A;
 }
-
 button {
   height:50px;
   width:80px;
   font-size: 17px;
   border-style:none;
-  background-color: white;
+  background-color: #FC4A1A;
 }
 .dropMenu{
   width:80px;
@@ -41,26 +45,59 @@ button {
 }
 
 .nav a:hover{
-  background-color: #1c042d;
-  color:white;
+  background-color: #f7b733;
 }
-
 button:hover{
   box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.2);
-  background-color: #1c042d;
-  color: white;
+  background-color: #f7b733;
 }
-.imageSlider{
-  width: 100%;
-  background-color:black;
-  height:200px;
+/* End of navigation css */
+
+/* Controls image css */
+.image{
+  position: relative;
+}
+.image img{
+  max-height:460px;
+  max-width:900px;
+  min-width: 301px;
+  width:100%;
+}
+.imageText{
+  opacity: 0.8;
+  position: absolute;
+  color: white;
+  background-color: black;
+  bottom: 6px;
+  left: 0px;
+  font-size: 28px;
+}
+/* end of image css */
+
+/* Controls main content of page css*/
+.mainContent{
+text-align: left;
+height:90%;
+padding-bottom: 15px;
+z-index: 2;
+}
+.mainContent h1{
 }
 
+/* End of main css*/
+
+/* Controls footer css*/
 .footer{
   width:100%;
-  background-color: black;
-  height:100px;
-  position: absolute;
-  bottom: 0;
-  right:0;
+  background-color: #fc4a1a;
+  position: static;
+  z-index: -1;
+  font-size: 13px;
+}
+.footer h2{
+  margin:0 0 3px 0;
+}
+
+.footer p{
+  margin:0 0 3px 0;
 }
