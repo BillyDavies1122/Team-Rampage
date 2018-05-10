@@ -57,9 +57,7 @@ button:hover{
 }
 /* End of navigation css */
 
-.main{
-  margin:0;
-}
+
 
 /* Controls image css */
 .image{
@@ -84,7 +82,6 @@ button:hover{
 /* end of image css */
 
 /* Controls main content of page css*/
-
 .mainContent{
   text-align: left;
   height:100%;
@@ -97,7 +94,6 @@ button:hover{
 .mainContent li{
   padding-top: 5px;
 }
-
 .mainContent h1{
   text-align: center;
   margin-top: 0;
@@ -108,8 +104,53 @@ button:hover{
 .mainContent ol:last-child{
   margin:0 0 0 0;
 }
+.mainContent img{
+  max-width: 400px;
+
+  width: 100%;
+}
 
 /* End of main css*/
+
+/* controls the card css */
+.card {
+   background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+    transition: 0.3s;
+    border-radius: 4px;
+    max-width: 220px;
+  }
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.3);
+}
+.cardimage{
+  position: relative;
+  background-color: #4ABDAC;
+  max-height: 140px;
+}
+.cardimage img{
+}
+.cardImageText{
+  position: absolute;
+  color: white;
+  background-color: black;
+  opacity: 0.8;
+}
+.container {
+  }
+.container p {
+  font-size: 15px;
+  margin:4px;
+  margin-bottom: 8px;
+  }
+
+.actions{
+  padding-bottom: 15px;
+}
+
+/* end of card css */
+
+
 
 /* Controls footer css*/
 .footer{
@@ -127,4 +168,33 @@ button:hover{
 }
 .footer p{
   margin:0 0 3px 0;
+}
+
+/* controls form css */
+form {
+  width: 310px;
+  height:400px;
+  text-align: center;
+}
+.FormDiv {
+  background-color: #f1f1f1;
+}
+label {
+  float:left;
+  padding-left: 12px;
+  padding-top: 10px;
+}
+input{
+    width: 95%;
+    padding: 12px 20px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.buttonform button{
+  color: black;
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
 }
