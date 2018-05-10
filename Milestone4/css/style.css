@@ -11,6 +11,7 @@ body{
   position: relative;
   z-index: 1;
   height:50px;
+  background-color: #FC4A1A;
 }
 
 .Content{
@@ -32,6 +33,7 @@ button {
   font-size: 17px;
   border-style:none;
   background-color: #FC4A1A;
+
 }
 .dropMenu{
   width:80px;
@@ -56,12 +58,13 @@ button:hover{
 /* End of navigation css */
 
 .main{
-  background-color: #4ABDAC;
+  margin:0;
 }
 
 /* Controls image css */
 .image{
   position: relative;
+  background-color: #4ABDAC;
 }
 .image img{
   max-height:460px;
@@ -85,11 +88,24 @@ button:hover{
 .mainContent{
   text-align: left;
   height:100%;
+  background-color: #4ABDAC;
+  padding-bottom: 15px;
 }
+.mainContent ol{
+  margin-bottom: 15px;
+}
+.mainContent li{
+  padding-top: 5px;
+}
+
 .mainContent h1{
   text-align: center;
+  margin-top: 0;
 }
 .mainContent p:last-child{
+  margin:0 0 0 0;
+}
+.mainContent ol:last-child{
   margin:0 0 0 0;
 }
 
