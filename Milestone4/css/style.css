@@ -16,7 +16,7 @@ body{
 
 .Content{
   display: none;
-  width:80px;
+  width:100%;
 }
 .nav a{
   text-decoration: none;
@@ -26,17 +26,18 @@ body{
   background-color: #FC4A1A;
 }
 
-button {
+.nav button{
   flex:1;
-  height:50px;
-  max-width:160px;
+  height:100%;
   font-size: 17px;
   border-style:none;
   background-color: #FC4A1A;
+  width: 100%;
+  max-width: 200px;
 
 }
 .dropMenu{
-  width:80px;
+  width:100%;
 }
 /* ~ because its a sibling element `*/
 .dropMenu:hover~.Content{
@@ -87,6 +88,7 @@ button:hover{
   height:100%;
   background-color: #4ABDAC;
   padding-bottom: 15px;
+  color: #3e;
 }
 .mainContent ol{
   margin-bottom: 15px;
@@ -121,7 +123,7 @@ button:hover{
     max-width: 220px;
   }
 .card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.3);
+    box-shadow: 0 8px 96px 0 rgba(0, 0, 0, 0.3);
 }
 .cardimage{
   position: relative;
@@ -150,8 +152,6 @@ button:hover{
 
 /* end of card css */
 
-
-
 /* Controls footer css*/
 .footer{
   position: sticky;
@@ -161,7 +161,6 @@ button:hover{
   background-color: #fc4a1a;
   text-align: center;
   font-size: 13px;
-  opacity: 0.8;
 }
 .footer h2{
   margin:0 0 3px 0;
@@ -175,6 +174,10 @@ form {
   width: 310px;
   height:400px;
   text-align: center;
+  padding-bottom: 40px;
+  padding-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .FormDiv {
   background-color: #f1f1f1;
@@ -197,4 +200,45 @@ input{
   display:block;
   margin-left: auto;
   margin-right: auto;
+}
+
+@media only screen and (min-width:650px){
+  body{
+    background-color: #fffff7
+  }
+  .nav{
+    height: 85px;
+  }
+.nav button{
+  font-size: 26px;
+}
+.nav a{
+  font-size: 22px;
+}
+.main{
+    width: 50%;
+    text-align: center;
+    align-items: center;
+    margin-right: auto;
+    margin-left:auto;
+    border-left: 1px solid;
+    border-right:1px solid;
+    box-shadow: 0 8px 120px 0 rgba(0, 0, 0, 0.3);
+  }
+  .mainContent{
+    text-align: center;
+    font-size: 25px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .image img{
+    max-height:660px;
+    max-width:1200px;
+    width:100%;
+  }
+  .imageText{
+    margin-left: 40%;
+    margin-right: 40%;
+  }
 }
