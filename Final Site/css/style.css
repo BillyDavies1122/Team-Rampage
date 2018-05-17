@@ -1,0 +1,244 @@
+body{
+  font-family: Arial;
+  margin:0;
+  position: relative;
+}
+
+/* Controls all of the navigation css */
+.nav{
+  display:flex;
+  width:100%;
+  position: relative;
+  z-index: 1;
+  height:50px;
+  background-color: #FC4A1A;
+}
+
+.Content{
+  display: none;
+  width:100%;
+}
+.nav a{
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+  text-align: center;
+  background-color: #FC4A1A;
+}
+
+.nav button{
+  flex:1;
+  height:100%;
+  font-size: 17px;
+  border-style:none;
+  background-color: #FC4A1A;
+  width: 100%;
+  max-width: 200px;
+
+}
+.dropMenu{
+  width:100%;
+}
+/* ~ because its a sibling element `*/
+.dropMenu:hover~.Content{
+  display: grid;
+}
+
+/* still displays when the main button is no longer hovered over*/
+.Content:hover{
+  display: grid;
+}
+
+.nav a:hover{
+  background-color: #f7b733;
+}
+button:hover{
+  box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.2);
+  background-color: #f7b733;
+}
+/* End of navigation css */
+
+
+
+/* Controls image css */
+.image{
+  position: relative;
+  background-color: #4ABDAC;
+}
+.image img{
+  max-height:460px;
+  max-width:900px;
+  min-width: 301px;
+  width:100%;
+}
+.imageText{
+  opacity: 0.8;
+  position: absolute;
+  color: white;
+  background-color: black;
+  bottom: 6px;
+  left: 0px;
+  font-size: 28px;
+}
+/* end of image css */
+
+/* Controls main content of page css*/
+.mainContent{
+  text-align: left;
+  height:100%;
+  background-color: #4ABDAC;
+  padding-bottom: 15px;
+  color: #3e;
+}
+.mainContent ol{
+  margin-bottom: 15px;
+}
+.mainContent li{
+  padding-top: 5px;
+}
+.mainContent h1{
+  text-align: center;
+  margin-top: 0;
+}
+.mainContent p:last-child{
+  margin:0 0 0 0;
+}
+.mainContent ol:last-child{
+  margin:0 0 0 0;
+}
+.mainContent img{
+  max-width: 400px;
+
+  width: 100%;
+}
+
+/* End of main css*/
+
+/* controls the card css */
+.card {
+   background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+    transition: 0.3s;
+    border-radius: 4px;
+    max-width: 220px;
+  }
+.card:hover {
+    box-shadow: 0 8px 96px 0 rgba(0, 0, 0, 0.3);
+}
+.cardimage{
+  position: relative;
+  background-color: #4ABDAC;
+  max-height: 140px;
+}
+.cardimage img{
+}
+.cardImageText{
+  position: absolute;
+  color: white;
+  background-color: black;
+  opacity: 0.8;
+}
+.container {
+  }
+.container p {
+  font-size: 15px;
+  margin:4px;
+  margin-bottom: 8px;
+  }
+
+.actions{
+  padding-bottom: 15px;
+}
+
+/* end of card css */
+
+/* Controls footer css*/
+.footer{
+  position: sticky;
+  bottom: 0;
+  width: 100%;
+  padding: 4px;
+  background-color: #fc4a1a;
+  text-align: center;
+  font-size: 13px;
+}
+.footer h2{
+  margin:0 0 3px 0;
+}
+.footer p{
+  margin:0 0 3px 0;
+}
+
+/* controls form css */
+form {
+  width: 310px;
+  height:400px;
+  text-align: center;
+  padding-bottom: 40px;
+  padding-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.FormDiv {
+  background-color: #f1f1f1;
+}
+label {
+  float:left;
+  padding-left: 12px;
+  padding-top: 10px;
+}
+input{
+    width: 95%;
+    padding: 12px 20px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.buttonform button{
+  color: black;
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media only screen and (min-width:650px){
+  body{
+    background-color: #fffff7
+  }
+  .nav{
+    height: 85px;
+  }
+.nav button{
+  font-size: 26px;
+}
+.nav a{
+  font-size: 22px;
+}
+.main{
+    width: 50%;
+    text-align: center;
+    align-items: center;
+    margin-right: auto;
+    margin-left:auto;
+    border-left: 1px solid;
+    border-right:1px solid;
+    box-shadow: 0 8px 120px 0 rgba(0, 0, 0, 0.3);
+  }
+  .mainContent{
+    text-align: center;
+    font-size: 25px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .image img{
+    max-height:660px;
+    max-width:1200px;
+    width:100%;
+  }
+  .imageText{
+    margin-left: 40%;
+    margin-right: 40%;
+  }
+}
