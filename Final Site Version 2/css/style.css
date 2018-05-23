@@ -83,6 +83,7 @@ body{
 .image{
   position: relative;
   background-color: none;
+  background-color: #F5F5F5;
 }
 .image img{
   max-height:200px;
@@ -141,7 +142,7 @@ body{
     transition: 0.3s;
     border-radius: 4px;
     max-width: 220px;
-
+    margin-top: 15px;
     margin-left: 25px;
   }
 .card:hover {
@@ -371,7 +372,8 @@ input{
     border-left: 1px solid;
     border-right:1px solid;
     box-shadow: 0 8px 120px 0 rgba(0, 0, 0, 0.3);
-
+    max-width: 1200px;
+    background-color: #f5f5f5;
   }
   .mainContent{
     font-size:22px;
@@ -396,6 +398,7 @@ input{
     max-height:660px;
     max-width:1200px;
     width:100%;
+    padding-bottom: 0px;
   }
   .imageText{
     margin-left: 40%;
