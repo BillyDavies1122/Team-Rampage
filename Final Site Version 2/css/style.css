@@ -34,12 +34,15 @@ body{
   list-style-type: none;
   margin-top: auto;
   margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .nav .navigation .top{
   border-right: 1px solid #fffff7;
   padding: 4px;
   display: inline-block;
+
 }
 
 .submenu{
@@ -355,6 +358,10 @@ input{
   .nav a{
     font-size: 22px;
     font-family: 'Roboto', sans-serif;
+  }
+  .nav .navigation{
+    margin-left: 0px;
+    margin-right: 0px;
   }
 
 .main{
