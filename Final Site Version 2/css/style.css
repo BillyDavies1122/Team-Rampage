@@ -7,7 +7,6 @@ body{
 /* Controls all of the navigation css */
 .logo{
   margin-top: 7.5px;
-  margin-left: 30px;
   width: 325px;
   height: 70px;
   background-image: url("../images/pet.png");
@@ -39,7 +38,6 @@ body{
   padding: 0;
   list-style-type: none;
   margin-top: 30px;
-  margin-left: 150px;
 }
 
 .nav .navigation .top{
@@ -362,7 +360,7 @@ input{
     font-family: 'Roboto', sans-serif;
   }
 .main{
-    width: 70%;
+    width: 65%;
     text-align: center;
     align-items: center;
     margin-right: auto;
@@ -371,7 +369,8 @@ input{
     border-right:1px solid;
     box-shadow: 0 8px 120px 0 rgba(0, 0, 0, 0.3);
     height:100%;
-
+    background-color: #f5f5f5;
+    max-width: 1250px;
   }
   .mainContent{
     font-size:22px;
